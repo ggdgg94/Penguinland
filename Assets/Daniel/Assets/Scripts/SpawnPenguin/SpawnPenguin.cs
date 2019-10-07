@@ -19,13 +19,16 @@ public class SpawnPenguin : MonoBehaviour
         Vector2 position = transform.position;
         position = new Vector2(position.x - speed * Time.deltaTime, position.y);
 
-        transform.position = position;
-
 
         if (transform.position.x < xPositionLmit)
         {
-            Destroy(gameObject);
+            position.x = 0;
+            //Destroy(gameObject);
         }
+
+        transform.position = position;
+
+
 
     }
 }

@@ -91,6 +91,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -103,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: dc10d3cb94918a052b9f2f3253479651, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 17cc8a2eae29d7e36b815f7ae8cc81fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -150,7 +151,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.36, y: 0.47}
+    oldSize: {x: 24.73213, y: 41.18}
     newSize: {x: 1.36, y: 0.47}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -193,8 +194,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  minY: -4.75
+  maxX: 0
   maxY: 4.75
+  minX: 0
+  minY: -4.75
   attackTimer: 0.35
   playerBullet: {fileID: 1537916816360875944, guid: 6350f5a0c5640087ba7ae3568c774a74,
     type: 3}
